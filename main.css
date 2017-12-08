@@ -1,3 +1,29 @@
+.kiss-foreground, .kiss-background {
+  position: absolute;
+  width                 : 100%;
+  height                : 100vh;
+}
+
+.kiss-foreground {
+  z-index: 1;
+  background-image: url(images/Group.png);
+    background-repeat     : no-repeat;
+  background-position   : center;
+  background-size       : cover;
+  /* background-color: blue; */
+}
+.kiss-background {
+  background-image: url(images/kiss_background.jpg);
+    background-repeat     : no-repeat;
+  background-position   : center;
+  background-size       : cover;
+  filter: blur(2.5px)
+}
+.title-content{
+  z-index: 2;
+}
+
+
 #hero-section {
   display               : flex;
   position              : relative;
@@ -25,7 +51,7 @@
 }
 
 #static-photo1{
-  background-image: url("http://www.fillmurray.com/900/800");
+  background-image: url(images/stonehedge.jpg);
   background-repeat     : no-repeat;
   background-attachment : fixed;
   background-position   : center;
@@ -142,7 +168,7 @@
 }
 
 a:hover:before {
-  background-image: url('flower.png');
+  background-image: url('images/flower.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
@@ -152,7 +178,7 @@ a:hover:before {
 }
 
 a:hover:after {
-  background-image: url('flower.png');
+  background-image: url('images/flower.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
