@@ -1,76 +1,3 @@
-.kiss-foreground, .kiss-background {
-  position: absolute;
-  width                 : 100%;
-  height                : 100vh;
-  background-attachment : fixed;
-  -webkit-transition: all .2s; /* Safari */
-  transition: all 1s;
-  transition-delay: .5s;
-  transition-timing-function: ease-in;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-
-.kiss-foreground {
-  z-index: 1;
-  background-image: url(images/Group.png);
-    background-repeat     : no-repeat;
-  background-position   : center;
-  background-size       : cover;
-    height: 54%;
-  /* background-color: blue; */
-  filter: blur(3px)
-}
-
-.kiss-background {
-  background-image: url(images/kiss_background.jpg);
-  background-repeat     : no-repeat;
-  background-position   : center;
-  background-size       : cover;
-  filter: blur(0px)
-}
-
-.kiss-foreground:hover {
-  filter: blur(0px)
-}
-.kiss-foreground:hover + .kiss-background{
-  filter: blur(2.5px)
-}
-
-
-#hero-section {
-  display               : flex;
-  position              : relative;
-  width                 : 100%;
-  height                : 100vh;
-  flex-direction        : column;
-  justify-content       : flex-end;
-}
-
-.title-content{
-    z-index: 2;
-  padding: 13% 10% 10%;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-#our-story-section{
-  display               : flex;
-  position              : relative;
-  width                 : 100%;
-  height                : 100vh;
-  background-color:  purple;
-}
-
-#static-photo1{
-  background-image: url(images/stonehedge.jpg);
-  background-repeat     : no-repeat;
-  background-attachment : fixed;
-  background-position   : center;
-  background-size       : cover;
-  width: 100%;  
-  height: 100vh;
-}
 
 #nav-icon {
   z-index            : 4;
@@ -209,3 +136,142 @@ a:hover:after {
   -webkit-transition : all .25s ease-in-out;
   transition         : all .25s ease-in-out;
 }
+
+
+
+
+/*
+  font-family: 'Tangerine', cursive; 
+  font-family: 'Pinyon Script', cursive;
+  font-family: 'Parisienne', cursive; 
+*/
+
+.kiss-foreground, .kiss-background {
+  width                 : 100%;
+  height                : 100vh;
+  background-attachment : fixed;
+  -webkit-transition: all .2s; /* Safari */
+  transition: all 1.2s;
+  transition-delay: .3s;
+  transition-timing-function: ease-out;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+
+.kiss-foreground {
+  z-index: 1;
+  background-image: url(images/Group.png);
+  background-repeat     : no-repeat;
+  background-position   : center;
+  background-size       : cover;
+  height: 54%;
+  filter: blur(3px)
+}
+
+.kiss-background {
+  position: absolute;
+  background-image: url(images/kiss_background.jpg);
+  background-repeat     : no-repeat;
+  background-position   : center;
+  background-size       : cover;
+  filter: blur(0px)
+}
+
+#hero-section {
+  display               : flex;
+  position              : relative;
+  width                 : 100%;
+  height                : 100vh;
+  flex-direction        : column;
+  justify-content       : flex-end;
+  -webkit-backface-visibility: hidden;
+-webkit-transform: translateZ(0) scale(1.0, 1.0);
+transform: translateZ(0);
+}
+
+.title-content{
+  z-index: 2;
+  padding: 280px 33% 0 12%;
+  max-height: 100%;
+  max-width: 100%;
+  text-shadow: -3px 2px 60px black;
+  color: white;
+  font-family: 'Pinyon Script', cursive;
+  -webkit-transition: all .2s;
+  transition: all 1.2s;
+  transition-delay: .3s;
+  transition-timing-function: ease-out;
+  font-size: 20px;
+}
+
+.title {
+  font-size: 65px;
+  margin: 0;
+}
+
+.content{
+  margin: -10px 0 0 120px;
+  font-size: 29px;
+}
+
+#our-story-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50%;
+  height: 100%;
+  padding: 100vh 0;
+  padding-right: 38px;
+}
+
+.section-title {
+  font-family: 'Tangerine', cursive; 
+  font-size: 40px;  
+}
+
+.our-story-content {
+  line-height: 1.3;
+  font-family: 'PT Sans', sans-serif;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#static-photo1{
+  background-image: url(images/our_story_background.jpg);
+  background-repeat     : no-repeat;
+  background-attachment : fixed;
+  background-position   : center;
+  background-size       : cover;
+  width: 100%;  
+}
+
+
+.boy {
+  color: #008dd8;
+  font-size: 20px
+}
+.girl {
+  color: #efa7c7;
+  font-size: 20px
+}
+
+#location-section {
+  display: flex;
+}
+
+.location-content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px;
+}
+
+.location-img {
+width: 50%;
+}
+
+
