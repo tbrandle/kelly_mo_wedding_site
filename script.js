@@ -10,7 +10,7 @@
 $(document).ready(function () {
     var counter = 0;
     // Start the changing images
-    setInterval(function () {
+    var interval = setInterval(function () {
       if (counter == 9) {
         counter = 0;
       }   
@@ -19,7 +19,7 @@ $(document).ready(function () {
     }, 3000);
     
     // Set the percentage off
-    loading();
+  loading(interval);
 });
 
 function changeImage(counter = 0) {
@@ -34,7 +34,7 @@ function changeImage(counter = 0) {
   $(".loader .image").html("" + images[counter] + "");
 }
 
-function loading() {
+function loading(interval) {
   var num = 0;
 
   for (i = 0; i <= 100; i++) {
@@ -44,6 +44,7 @@ function loading() {
       if (num == 100) {
         // loading();
         $('.loader-container').fadeOut()
+        clearInterval(interval)
       }
       num++;
     }, i * 120);
