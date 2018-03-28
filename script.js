@@ -1,8 +1,55 @@
+// $(window).on('load', function () {
+//   // PAGE IS FULLY LOADED  
+//   // FADE OUT YOUR OVERLAYING DIV
+//   setTimeout(function () { 
+//     $('#loader').fadeOut();
+//     console.log("Hello"); 
+//   }, 2000);
+// });
 
-$('#nav-icon, .nav-link').click(function () {
-  $('#nav-icon').toggleClass('open');
-  $('.nav-menu').toggleClass('hidden')
+$(document).ready(function () {
+    var counter = 0;
+    // Start the changing images
+    setInterval(function () {
+      if (counter == 9) {
+        counter = 0;
+      }   
+      changeImage(counter);
+      counter++;
+    }, 3000);
+    
+    // Set the percentage off
+    loading();
 });
+
+function changeImage(counter = 0) {
+  var images = [
+    '<img class="icon" src="images/pine.svg"></img>',
+    '<img class="icon" src="images/yoga.svg"></img>',
+    '<img class="icon" src="images/skier.svg"></img>',
+    '<img class="icon" src="images/heart.svg"></img>',
+    '<img class="icon" src="images/ring.svg"></img>',
+  ];
+
+  $(".loader .image").html("" + images[counter] + "");
+}
+
+function loading() {
+  var num = 0;
+
+  for (i = 0; i <= 100; i++) {
+    setTimeout(function () {
+      $('.loader span').html(num + '%');
+
+      if (num == 100) {
+        // loading();
+        $('.loader-container').fadeOut()
+      }
+      num++;
+    }, i * 120);
+  };
+
+}
 
 $(".kiss-foreground").on("mouseenter", function () {
   $(this).siblings(".kiss-background").css({

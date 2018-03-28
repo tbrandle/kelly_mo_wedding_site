@@ -1,0 +1,2 @@
+#!/bin/bash
+scp -i ~/.ssh/webserver.pem -r . ubuntu@18.218.133.11:/var/www/html
