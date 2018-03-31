@@ -110,3 +110,12 @@ $(".kiss-foreground").on("mouseleave", function () {
 });
 
 
+
+
+
+// $(window).resize(function () {
+//   if($(window).width() < 700){
+//     $('#kiss-foreground').removeClass('kiss-foreground');
+//   }
+// });
+
