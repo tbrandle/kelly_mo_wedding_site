@@ -92,7 +92,7 @@
             backface-visibility: hidden;
             -webkit-backface-visibility: hidden;
         }
-        
+
         .kiss-foreground {
             background-attachment: fixed;
             z-index: 1;
@@ -170,7 +170,7 @@
             width: 280px;
         }
 
-        .media{
+        .media {
             display: none;
         }
 
@@ -184,22 +184,25 @@
                 padding: 126px 0;
                 text-align: center;
             }
-            .media{
+            .media {
                 display: block;
             }
-            .desktop{
-                display:none
-
+            .desktop {
+                display: none
             }
             .foreground-link {
                 margin: 36px 30% 0px 20%;
+            }
+            .kiss-background,
+            .kiss-foreground {
+                background-position-x: 59%;
+                background-size: 1156px;
             }
         }
 
         @media screen and (max-width: 650px) {
             .title {
-                font-size: 55px
-
+                font-size: 72px
             }
             .content {
                 font-size: 23px
@@ -210,6 +213,5 @@
                 width: 225px;
             }
         }
-
 
         /* media query @ 800px  */
