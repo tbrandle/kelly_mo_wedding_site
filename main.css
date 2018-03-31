@@ -104,16 +104,6 @@
             filter: blur(3px)
         }
 
-        .foreground-media-query {
-            background-size: 1074px;
-            background-position-y: -330px;
-            z-index: 1;
-            background-image: url(images/Group.png);
-            background-repeat: no-repeat;
-            height: 54%;
-            filter: blur(3px)
-        }
-
         .kiss-background {
             position: absolute;
             background-image: url(images/kiss_background.jpg);
