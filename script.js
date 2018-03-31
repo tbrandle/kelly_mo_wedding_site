@@ -87,3 +87,11 @@ $(".kiss-foreground").on("mouseleave", function () {
        'transform': 'translateZ(0)',
       });
 });
+
+$(window).resize(function () {
+  if($(window).width() < 800){
+    $('#kiss-foreground').removeClass('kiss-foreground');
+  } else {
+    $('#kiss-foreground').addClass('kiss-foreground');
+  }
+});
