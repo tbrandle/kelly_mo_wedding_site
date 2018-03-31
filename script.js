@@ -1,11 +1,3 @@
-// $(window).on('load', function () {
-//   // PAGE IS FULLY LOADED  
-//   // FADE OUT YOUR OVERLAYING DIV
-//   setTimeout(function () { 
-//     $('#loader').fadeOut();
-//     console.log("Hello"); 
-//   }, 2000);
-// });
 
 $(document).ready(function () {
     var counter = 0;
@@ -71,24 +63,11 @@ $(".kiss-foreground").on("mouseenter", function () {
           '-webkit-transform': 'translateZ(0) scale(1.0, 1.0)',
   'transform': 'translateZ(0)',
       });
-  // $(this).css({
-  //       'filter': 'blur(2.7px)',
-  //       '-webkit-filter': 'blur(2.7px)',
-  //       '-moz-filter': 'blur(2.7px)',
-  //       '-o-filter': 'blur(2.7px)',
-  //       '-ms-filter': 'blur(2.7px)'
-  //     });
+
 });
         
 $(".kiss-foreground").on("mouseleave", function () {
           
-  // $(this).css({
-  //       'filter': 'blur(0px)',
-  //       '-webkit-filter': 'blur(0px)',
-  //       '-moz-filter': 'blur(0px)',
-  //       '-o-filter': 'blur(0px)',
-  //       '-ms-filter': 'blur(0px)'
-  //     });
   $(this).css({
         'filter': 'blur(2.7px)',
         '-webkit-filter': 'blur(2.7px)',
@@ -108,14 +87,3 @@ $(".kiss-foreground").on("mouseleave", function () {
        'transform': 'translateZ(0)',
       });
 });
-
-
-
-
-
-// $(window).resize(function () {
-//   if($(window).width() < 700){
-//     $('#kiss-foreground').removeClass('kiss-foreground');
-//   }
-// });
-
