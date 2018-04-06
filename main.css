@@ -85,7 +85,6 @@
             height: 100vh;
             background-position: center bottom -17px;
             -webkit-transition: filter .2s;
-            */
             /* Safari */
             transition: filter 1.2s;
             transition-delay: .3s;
@@ -107,7 +106,7 @@
 
         .kiss-background {
             position: absolute;
-            background-image: url(images/kiss_background.jpg);
+            background-image: url(images/kiss_background2.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
