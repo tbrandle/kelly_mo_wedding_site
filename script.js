@@ -19,6 +19,7 @@ function changeImage(counter = 0) {
     '<img class="icon" src="images/pine.svg"></img>',
     '<img class="icon" src="images/yoga.svg"></img>',
     '<img class="icon" src="images/skier.svg"></img>',
+    '<img class="icon" src="images/heart.svg"></img>',
   ];
 
   $(".loader .image").html("" + images[counter] + "");
@@ -37,7 +38,7 @@ function loading(interval) {
         clearInterval(interval)
       }
       num++;
-    }, i * 120);
+    }, i * 130);
   };
 
 }
